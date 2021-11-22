@@ -1,2 +1,3 @@
 .idea
 .target
+SpringBootLogWatcher\src\main\resources\public\WatcherLogFile.log
