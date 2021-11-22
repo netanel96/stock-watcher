@@ -347,3 +347,23 @@ stock: Boeing, current Price: 209.9, change since watching: -5.04%, start price:
 INFO: 
 
 CHECK stock of AMZN
+נוב 22, 2021 11:19:53 PM app.Watcher watch
+INFO: 
+stock: Abbott Laboratories, current Price: 125.26, change since watching: -75.44%, start price: 510.0
+stock: Abbott Laboratories, current Price: 179.66, change since watching: -64.77%, start price: 510.0
+stock: Amazon, current Price: 3572.57, change since watching: +8.29%, start price: 3299.0
+stock: Boeing, current Price: 209.9, change since watching: -5.04%, start price: 221.05, 3 months since acquired, cycles: 3
+נוב 22, 2021 11:19:53 PM app.Watcher watch
+INFO: 
+
+CHECK stock of AMZN
+נוב 22, 2021 11:21:02 PM app.Watcher watch
+INFO: 
+stock: Abbott Laboratories, current Price: 125.26, change since watching: -75.44%, start price: 510.0
+stock: Abbott Laboratories, current Price: 179.66, change since watching: -64.77%, start price: 510.0
+stock: Amazon, current Price: 3572.57, change since watching: +8.29%, start price: 3299.0
+stock: Boeing, current Price: 209.9, change since watching: -5.04%, start price: 221.05, 3 months since acquired, cycles: 3
+נוב 22, 2021 11:21:02 PM app.Watcher watch
+INFO: 
+
+CHECK stock of AMZN
