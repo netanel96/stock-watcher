@@ -1,4 +1,4 @@
-package watcher;
+package app;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;

@@ -1,4 +1,4 @@
-package watcher;
+package app;
 
 import actionDeciders.IActionDecider;
 import actionDeciders.StrategyA;
