@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 
 public class JsonFileCandidateStocksFetcher implements  ICandidateStocksFetcher{
     String localDir = System.getProperty("user.dir");
-//    String candidateStocksPath=localDir + "\\src\\main\\java\\configurations\\candidateStocks.json";
-    String candidateStocksPath="C:\\MyProjects\\Watch\\candidateStocks.json";
+    String candidateStocksPath=localDir + "\\src\\main\\java\\configurations\\candidateStocks.json";
+//    String candidateStocksPath="C:\\MyProjects\\Watch\\candidateStocks.json";
     JSONParser jsonParser = new JSONParser();
     List<Stock> stockList=new ArrayList<>();
     String UpdateCandidatesFileLog="";
