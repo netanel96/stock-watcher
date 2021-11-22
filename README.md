@@ -3,4 +3,4 @@ watches for stock prices that goes around the same values and alerts when it hap
 
 how to run:
 1. run the App inside app package to run the project without SpringBoot.(only the watcher).
-2.run the SpringServeWatcherLogApplication and open in the browser:http://localhost:8080/WatcherLogFile.log to watch  the logs.
+2. run the SpringServeWatcherLogApplication and open in the browser:http://localhost:8080/WatcherLogFile.log to watch  the logs.
