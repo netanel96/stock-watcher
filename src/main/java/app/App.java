@@ -12,4 +12,5 @@ public class App {
 //            System.out.println("ERROR, some shit happend");
 //        }
 //    }
+    public void somesHIT(){};
 }
