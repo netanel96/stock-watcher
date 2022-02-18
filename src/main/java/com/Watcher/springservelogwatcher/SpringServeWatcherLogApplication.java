@@ -1,6 +1,7 @@
 package com.Watcher.springservelogwatcher;
 
 import app.App;
+import app.Watcher;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,7 +9,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringServeWatcherLogApplication {
 
 	private static void runMainWatcher(String[] args){
-		App.main(args);
+		try {
+			Watcher watcher = new Watcher();
+			System.out.println("watching..");
+			watcher.watch();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("ERROR, some shit happend");
+		}
 	}
 
 
