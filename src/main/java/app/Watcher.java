@@ -36,9 +36,6 @@ public class Watcher {
         listOfIInvestStrategyPropsReader = new SimpleInvestPropsFetcher().getAllInvestStrategyProps();
         stockList = new ArrayList<>();
         iWalletAction = new WalletActionsImp();
-        System.out.println("sooooooooooooooooososoosososos\n");
-        String basePath = new File("").getAbsolutePath();
-        System.out.println("the base path is: "+ basePath);
         iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1(System.getProperty("user.dir")+"/src/main//java/configurations/candidateStocks.json");
         stockList = iCandidateStocksFetcher.getCandidateStocks();
         iTestDataHandler=new TestDataHandlerJsonImp(System.getProperty("user.dir")+"/src/main//java/configurations/testData.json");

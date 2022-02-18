@@ -95,6 +95,10 @@ public class StrategyA implements IActionDecider{
             decidedWalletAction = EWalletAction.SELL;
             actionStr=EWalletAction.SELL.getActionName()+" ";
         }
+        if (startPrice==999){
+            decidedWalletAction = EWalletAction.SELL;
+            actionStr=EWalletAction.SELL.getActionName()+" ";
+        }
     }
 
     private void shouldBuy() {
