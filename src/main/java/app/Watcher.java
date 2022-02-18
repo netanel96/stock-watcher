@@ -39,9 +39,9 @@ public class Watcher {
         System.out.println("sooooooooooooooooososoosososos\n");
         String basePath = new File("").getAbsolutePath();
         System.out.println("the base path is: "+ basePath);
-        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1("/app/src/main//java/configurations/candidateStocks.json");
+        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1(System.getProperty("user.dir")+"/src/main//java/configurations/candidateStocks.json");
         stockList = iCandidateStocksFetcher.getCandidateStocks();
-        iTestDataHandler=new TestDataHandlerJsonImp("\\app\\src\\main\\java\\configurations\\testData.json");
+        iTestDataHandler=new TestDataHandlerJsonImp(System.getProperty("user.dir")+"/src/main//java/configurations/testData.json");
 //        stockList.forEach(x->logger.info(x.toString()));
         stockDataFetcher=new StockDataProvider();
         stockDataFetcher.initStockData(getTickersStringArray());
