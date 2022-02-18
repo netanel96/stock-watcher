@@ -11,6 +11,7 @@ import investProps.*;
 import stockDataFetcher.IStockDataProvider;
 import stockDataFetcher.StockDataProvider;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -35,6 +36,9 @@ public class Watcher {
         listOfIInvestStrategyPropsReader = new SimpleInvestPropsFetcher().getAllInvestStrategyProps();
         stockList = new ArrayList<>();
         iWalletAction = new WalletActionsImp();
+        System.out.println("sooooooooooooooooososoosososos\n");
+        String basePath = new File("").getAbsolutePath();
+        System.out.println("the base path is: "+ basePath);
         iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1("\\app\\src\\main\\java\\configurations\\candidateStocks.json");
         stockList = iCandidateStocksFetcher.getCandidateStocks();
         iTestDataHandler=new TestDataHandlerJsonImp("\\app\\src\\main\\java\\configurations\\testData.json");
