@@ -17,8 +17,8 @@ public class WatcherController {
         return getLogData();
     }
     private String getLogData() {
-        ClassLoader classLoader = getClass().getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream("\\public\\WatcherLogFile.log");
+//        ClassLoader classLoader = getClass().getClassLoader();
+        InputStream inputStream = WatcherController.class.getResourceAsStream("\\public\\WatcherLogFile.log");
         String data = null;
         try {
             data = readFromInputStream(inputStream);
