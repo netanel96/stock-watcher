@@ -35,7 +35,7 @@ public class Watcher {
         listOfIInvestStrategyPropsReader = new SimpleInvestPropsFetcher().getAllInvestStrategyProps();
         stockList = new ArrayList<>();
         iWalletAction = new WalletActionsImp();
-        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1("\\mnt\\c\\MyProjects\\herokuProjects\\spring-serve-Watcher-log\\src\\main\\java\\configurations\\candidateStocks.json");
+        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1("\\app\\src\\main\\java\\configurations\\candidateStocks.json");
         stockList = iCandidateStocksFetcher.getCandidateStocks();
         iTestDataHandler=new TestDataHandlerJsonImp("\\app\\src\\main\\java\\configurations\\testData.json");
 //        stockList.forEach(x->logger.info(x.toString()));
