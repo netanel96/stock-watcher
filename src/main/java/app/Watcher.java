@@ -114,7 +114,7 @@ public class Watcher {
 //TODO:
 // 1.look at print of acuired when changed, for some reason its not changed on print.
 // 2.fix testData for counting loses (according to a configurable lose definition) and add more data on each win/lose.
-// 3.fix matanya bug of python exec command for when the location of the project is in a name like ma tanya (with space) the solution is to put it inside "".
-// 4.add seperaation of logs in ui. to show in one button the user output which is simple action buy/sell/check stock x.and in other button to show detailed state of each watched stock,and in another button to show detailed history of (test and real) actions and win lose values and a sum.
-// 5. try using YahooFinanceAPI jar instead of python script.
+// 3.add seperaation of logs in ui. to show in one button the user output which is simple action buy/sell/check stock x.and in other button to show detailed state of each watched stock,and in another button to show detailed history of (test and real) actions and win lose values and a sum.
+// 4. cant write on heroku file system.use solution is to write to external db.
+// 5.add  schedular in heroku to make it watch for stocks always.
 }
