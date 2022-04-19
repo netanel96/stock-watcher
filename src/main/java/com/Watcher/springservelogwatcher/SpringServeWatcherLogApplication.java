@@ -6,8 +6,10 @@ import candidateStocks.DBCandidateStocksFetcher;
 import entities.Stock;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
-@SpringBootApplication
+
+@SpringBootApplication(exclude = MongoAutoConfiguration.class)
 public class SpringServeWatcherLogApplication {
 
 	private static void runMainWatcher(String[] args){
