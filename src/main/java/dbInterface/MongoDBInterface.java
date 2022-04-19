@@ -1,5 +1,7 @@
 package dbInterface;
 
+import app.LoggerUtils;
+import com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication;
 import com.mongodb.BasicDBObject;
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
@@ -11,6 +13,7 @@ import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 import static com.mongodb.client.model.Filters.eq;
 
@@ -19,6 +22,7 @@ public class MongoDBInterface implements DbInterface<Document> {
     private static MongoClient mongoClient;
     private static MongoDatabase database;
     private static String  collectionName;
+    Logger logger = LoggerUtils.getLogger(SpringServeWatcherLogApplication.class.getName());
     public MongoDBInterface(String uri, String dbName,String collectionName) {
         try {
             if (mongoClient == null) {
@@ -30,7 +34,7 @@ public class MongoDBInterface implements DbInterface<Document> {
                 if (collectionExists==false){
                     database.createCollection(collectionName);
                 }
-                System.out.println("\n\nConnected to MongoDB!!\n");
+                logger.info("\n\nConnected to MongoDB!!\n");
             }
 
         } catch (Exception e) {
