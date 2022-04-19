@@ -22,7 +22,7 @@ public class SpringServeWatcherLogApplication {
 					"ACQUIRED","2022-04-19","123");
 			dbCandidateStocksFetcher.UpdateStock(stock);
 			watcher.watch();
-
+			DBCandidateStocksFetcher.mongoDBInterface.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("ERROR, some shit happend.");

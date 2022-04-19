@@ -76,6 +76,6 @@ public class MongoDBInterface implements DbInterface<Document> {
 
     @Override
     public void close() {
-
+        mongoClient.close();
     }
 }

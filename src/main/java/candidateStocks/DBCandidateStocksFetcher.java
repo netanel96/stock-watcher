@@ -8,7 +8,7 @@ import org.bson.Document;
 import java.util.List;
 
 public class DBCandidateStocksFetcher implements ICandidateStocksFetcher{
-    private static DbInterface<Document> mongoDBInterface;
+    public static DbInterface<Document> mongoDBInterface;
 
     static {
         String uri="mongodb+srv://nati:katana@cluster0.ffca4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
