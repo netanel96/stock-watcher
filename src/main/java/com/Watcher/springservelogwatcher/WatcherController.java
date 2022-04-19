@@ -14,7 +14,8 @@ public class WatcherController {
     @GetMapping("/")
     public String index() {
 
-        return "<div><button type=\"button\">Click Me!</button></div>";
+//        return "<div><button type=\"button\">Click Me!</button></div>";
+        return getLogData();
     }
     private String getLogData() {
         InputStream inputStream = WatcherController.class.getResourceAsStream("\\public\\WatcherLogFile.log");
