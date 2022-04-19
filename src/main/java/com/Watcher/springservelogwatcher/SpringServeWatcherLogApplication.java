@@ -19,7 +19,7 @@ public class SpringServeWatcherLogApplication {
 			System.out.println("updating MongoDb..");
 			DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
 			Stock stock=new Stock("ABT","Abbott Laboratories",100,
-					"ACQUIRED","2022-02-19","100");
+					"ACQUIRED","2022-04-19","123");
 			dbCandidateStocksFetcher.UpdateStock(stock);
 			watcher.watch();
 
