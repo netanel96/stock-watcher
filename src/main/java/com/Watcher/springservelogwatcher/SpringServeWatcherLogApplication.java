@@ -23,7 +23,7 @@ public class SpringServeWatcherLogApplication {
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("ERROR, some shit happend.");
+			System.out.println("ERROR, some shit happend");
 		}
 	}
 
