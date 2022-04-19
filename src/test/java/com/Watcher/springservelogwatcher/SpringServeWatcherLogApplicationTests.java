@@ -1,6 +1,7 @@
 package com.Watcher.springservelogwatcher;
 
 import candidateStocks.DBCandidateStocksFetcher;
+import candidateStocks.JsonFileCandidateStocksFetcher1;
 import com.mongodb.*;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
@@ -9,12 +10,19 @@ import com.mongodb.client.MongoDatabase;
 import entities.Stock;
 import org.bson.Document;
 import org.bson.types.ObjectId;
+import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.matchers.ArrayEquals;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 
 class SpringServeWatcherLogApplicationTests {
@@ -36,12 +44,38 @@ class SpringServeWatcherLogApplicationTests {
 		try {
 			DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
 			Stock stock=new Stock("ABT","Abbott Laboratories",11,
-					"ACQUIRED","2022-02-19","11");
+					"ACQUIRED","2022-02-19","133");
 			dbCandidateStocksFetcher.UpdateStock(stock);
+			System.out.println(dbCandidateStocksFetcher.printUpdateStockFileActions());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
+
+	}
+
+	@Test
+	void migrateFromJsonFileToMongoDB(){
+		JsonFileCandidateStocksFetcher1 jsonFileCandidateStocksFetcher1 = new JsonFileCandidateStocksFetcher1(System.getProperty("user.dir")+"/src/main//java/configurations/candidateStocks.json");
+		DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
+
+		List<Stock> stockListFromJsonFile= jsonFileCandidateStocksFetcher1.getCandidateStocks();
+		if (!(dbCandidateStocksFetcher.getCandidateStocks().isEmpty())){
+			System.out.println("cant migrate becuase db is not empty!");
+			fail();
+		}
+		stockListFromJsonFile.forEach(dbCandidateStocksFetcher::createCandidateStock);
+
+
+		List<Stock> stockListFromMongoDB=dbCandidateStocksFetcher.getCandidateStocks();
+//		Assert.assertEquals(stockListFromMongoDB.toArray(), stockListFromJsonFile.toArray());
+		assertTrue(stockListFromJsonFile.size() == stockListFromMongoDB.size() && stockListFromJsonFile.containsAll(stockListFromMongoDB) && stockListFromMongoDB.containsAll(stockListFromJsonFile));
+	}
+
+	@Test
+	void getAllCandidateStocks(){
+		DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
+		System.out.println("test res:all stocks:"+dbCandidateStocksFetcher.getCandidateStocks());
 
 	}
 

@@ -3504,3 +3504,199 @@ CHECK stock of TDY
 CHECK stock of FCX
 אפר׳ 19, 2022 4:46:50 אחה״צ app.Watcher watch
 INFO: 
+אפר׳ 19, 2022 9:25:58 אחה״צ app.Watcher watch
+INFO: 
+stock: Abbott Laboratories, current Price: 119.2717, change since watching: ‎-88.06%, start price: 999.0, 59 days since acquired, cycles: 17
+stock: Amazon, current Price: 3135.0452, change since watching: ‎-9.13%, start price: 3450.0, 4 months since acquired, cycles: 1
+stock: Boeing, current Price: 186.3, change since watching: ‎-15.72%, start price: 221.05, 2 months since acquired, cycles: 4
+stock: Bristol-Myers Squibb, current Price: 76.042, change since watching: +29.99%, start price: 58.5, 4 months since acquired, cycles: 1
+stock: Nvidia, current Price: 219.3606, change since watching: ‎-33.53%, start price: 330.0, 4 months since acquired, cycles: 3
+stock: KLA Corporation, current Price: 335.47, change since watching: ‎-18.97%, start price: 414.0, 3 months since acquired, cycles: 3
+stock: Electronic arts, current Price: 123.42, change since watching: ‎-8.58%, start price: 135.0, 2 months since acquired, cycles: 4
+stock: Applied Materials, current Price: 116.17, change since watching: ‎-11.32%, start price: 131.0, 10 days since acquired, cycles: 3
+stock: Starbux, current Price: 81.1027, change since watching: ‎-27.09%, start price: 111.24, 3 months since acquired, cycles: 2
+stock: Ralph Lauren, current Price: 112.12, change since watching: ‎-1.04%, start price: 113.3, 10 days since acquired, cycles: 4
+stock: Becton Dickinson (med tech), current Price: 261.25, change since watching: +2.05%, start price: 256.0, cycles: 3
+stock: Align Technology (med tech), current Price: 423.38, change since watching: ‎-30.82%, start price: 612.0, 3 months since acquired, cycles: 3
+stock: *********************************************
+stock: Texas Instruments (processors), current Price: 177.6, change since watching: ‎-7.98%, start price: 193.0, 3 months since acquired, cycles: 3
+stock: Match Group (dating apps), current Price: 93.89, change since watching: ‎-31.96%, start price: 138.0, 3 months since acquired, cycles: 2
+stock: Hasbro (board games), current Price: 88.215, change since watching: ‎-9.98%, start price: 98.0, 56 days since acquired, cycles: 3
+stock: Teledyne Technologies (high tech), current Price: 481.4, change since watching: +11.95%, start price: 430.0, cycles: 3
+stock: Ross Stores (clothes and stuff), current Price: 106.66, change since watching: ‎-11.12%, start price: 120.0, 3 months since acquired, cycles: 2
+stock: NXP Semiconductors, current Price: 177.1466, change since watching: ‎-11.43%, start price: 200.0, 2 months since acquired, cycles: 3
+stock: Aptiv PLC (automotive), current Price: 110.005, change since watching: ‎-26.66%, start price: 150.0, 2 months since acquired, cycles: 2
+stock: TJX Companies (Home and clothes stuff), current Price: 65.1063, change since watching: ‎-2.75%, start price: 66.95, 55 days since acquired, cycles: 2
+stock: Analog Devices, current Price: 160.89, change since watching: ‎-4.12%, start price: 167.8, 10 days since acquired, cycles: 4
+stock: Fortive Corporation (high tech), current Price: 59.0, change since watching: ‎-19.32%, start price: 73.13, 2 months since acquired, cycles: 2
+stock: Kimberly-Clark (Toilet stuff), current Price: 126.5679, change since watching: ‎-5.48%, start price: 133.9, 53 days since acquired, cycles: 2
+stock: CarMax (used cars), current Price: 95.76, change since watching: ‎-22.52%, start price: 123.6, 3 months since acquired, cycles: 2
+stock: Amcor (Containers/Packaging) *new stock, current Price: 11.755, change since watching: +1.36%, start price: 11.5978, cycles: 3
+stock: Autodesk (3D design), current Price: 204.63, change since watching: ‎-28%, start price: 284.2, 3 months since acquired, cycles: 2
+stock: Realty Income (real estate trust), current Price: 73.85, change since watching: +5.56%, start price: 69.96, cycles: 3
+stock: Freeport-McMoRan (mining company), current Price: 50.47, change since watching: +51.15%, start price: 33.39, cycles: 2
+אפר׳ 19, 2022 9:25:58 אחה״צ app.Watcher watch
+INFO: 
+
+CHECK stock of BMY
+CHECK stock of TDY
+CHECK stock of FCX
+אפר׳ 19, 2022 9:25:58 אחה״צ app.Watcher watch
+INFO: 
+NOTICE: S&P500 GOES UP BY: 1.13. THAT'S UNUSUAL. ACT WISELY!.
+NOTICE: S&P500 GOES UP BY: 1.12. THAT'S UNUSUAL. ACT WISELY!.
+אפר׳ 19, 2022 9:28:24 אחה״צ app.Watcher watch
+INFO: 
+SELL stock: Abbott Laboratories, current Price: 119.36, change since watching: +19.36%, start price: 100.0, 0 days since acquired, cycles: 123
+stock: Abbott Laboratories, current Price: 119.36, change since watching: ‎-88.05%, start price: 999.0, 59 days since acquired, cycles: 17
+אפר׳ 19, 2022 9:28:24 אחה״צ app.Watcher watch
+INFO: 
+
+CHECK stock of ABT
+אפר׳ 19, 2022 9:28:24 אחה״צ app.Watcher watch
+INFO: 
+NOTICE: S&P500 GOES UP BY: 1.13. THAT'S UNUSUAL. ACT WISELY!.
+אפר׳ 19, 2022 9:29:33 אחה״צ app.Watcher watch
+INFO: 
+SELL stock: Abbott Laboratories, current Price: 119.35, change since watching: +19.35%, start price: 100.0, 0 days since acquired, cycles: 123
+stock: Abbott Laboratories, current Price: 119.35, change since watching: ‎-88.05%, start price: 999.0, 59 days since acquired, cycles: 17
+אפר׳ 19, 2022 9:29:33 אחה״צ app.Watcher watch
+INFO: 
+
+CHECK stock of ABT
+אפר׳ 19, 2022 9:29:33 אחה״צ app.Watcher watch
+INFO: 
+NOTICE: S&P500 GOES UP BY: 1.17. THAT'S UNUSUAL. ACT WISELY!.
+אפר׳ 19, 2022 9:31:36 אחה״צ app.Watcher watch
+INFO: 
+SELL stock: Abbott Laboratories, current Price: 119.33, change since watching: +19.33%, start price: 100.0, 0 days since acquired, cycles: 123
+אפר׳ 19, 2022 9:31:36 אחה״צ app.Watcher watch
+INFO: 
+
+CHECK stock of ABT
+אפר׳ 19, 2022 9:31:36 אחה״צ app.Watcher watch
+INFO: 
+NOTICE: S&P500 GOES UP BY: 1.19. THAT'S UNUSUAL. ACT WISELY!.
+אפר׳ 19, 2022 9:33:46 אחה״צ app.Watcher watch
+INFO: 
+stock: Abbott Laboratories, current Price: 119.36, change since watching: ‎-88.05%, start price: 999.0, 59 days since acquired, cycles: 17
+stock: Amazon, current Price: 3138.425, change since watching: ‎-9.03%, start price: 3450.0, 4 months since acquired, cycles: 1
+stock: Boeing, current Price: 186.46, change since watching: ‎-15.65%, start price: 221.05, 2 months since acquired, cycles: 4
+stock: Bristol-Myers Squibb, current Price: 76.085, change since watching: +30.06%, start price: 58.5, 4 months since acquired, cycles: 1
+stock: Nvidia, current Price: 220.07, change since watching: ‎-33.31%, start price: 330.0, 4 months since acquired, cycles: 3
+stock: KLA Corporation, current Price: 335.77, change since watching: ‎-18.9%, start price: 414.0, 3 months since acquired, cycles: 3
+stock: Electronic arts, current Price: 123.595, change since watching: ‎-8.45%, start price: 135.0, 2 months since acquired, cycles: 4
+stock: Applied Materials, current Price: 116.28, change since watching: ‎-11.24%, start price: 131.0, 10 days since acquired, cycles: 3
+stock: Starbux, current Price: 81.1, change since watching: ‎-27.09%, start price: 111.24, 3 months since acquired, cycles: 2
+stock: Ralph Lauren, current Price: 112.165, change since watching: ‎-1%, start price: 113.3, 10 days since acquired, cycles: 4
+stock: Becton Dickinson (med tech), current Price: 261.94, change since watching: +2.32%, start price: 256.0, cycles: 3
+stock: Align Technology (med tech), current Price: 425.12, change since watching: ‎-30.54%, start price: 612.0, 3 months since acquired, cycles: 3
+stock: *********************************************
+stock: Texas Instruments (processors), current Price: 177.53, change since watching: ‎-8.02%, start price: 193.0, 3 months since acquired, cycles: 3
+stock: Match Group (dating apps), current Price: 94.01, change since watching: ‎-31.88%, start price: 138.0, 3 months since acquired, cycles: 2
+stock: Hasbro (board games), current Price: 88.09, change since watching: ‎-10.11%, start price: 98.0, 56 days since acquired, cycles: 3
+stock: Teledyne Technologies (high tech), current Price: 480.32, change since watching: +11.7%, start price: 430.0, cycles: 3
+stock: Ross Stores (clothes and stuff), current Price: 106.85, change since watching: ‎-10.96%, start price: 120.0, 3 months since acquired, cycles: 2
+stock: NXP Semiconductors, current Price: 177.06, change since watching: ‎-11.47%, start price: 200.0, 2 months since acquired, cycles: 3
+stock: Aptiv PLC (automotive), current Price: 109.825, change since watching: ‎-26.78%, start price: 150.0, 2 months since acquired, cycles: 2
+stock: TJX Companies (Home and clothes stuff), current Price: 65.285, change since watching: ‎-2.49%, start price: 66.95, 55 days since acquired, cycles: 2
+stock: Analog Devices, current Price: 161.09, change since watching: ‎-4%, start price: 167.8, 10 days since acquired, cycles: 4
+stock: Fortive Corporation (high tech), current Price: 59.01, change since watching: ‎-19.31%, start price: 73.13, 2 months since acquired, cycles: 2
+stock: Kimberly-Clark (Toilet stuff), current Price: 126.53, change since watching: ‎-5.5%, start price: 133.9, 53 days since acquired, cycles: 2
+stock: CarMax (used cars), current Price: 95.78, change since watching: ‎-22.51%, start price: 123.6, 3 months since acquired, cycles: 2
+stock: Amcor (Containers/Packaging) *new stock, current Price: 11.755, change since watching: +1.36%, start price: 11.5978, cycles: 3
+stock: Autodesk (3D design), current Price: 204.93, change since watching: ‎-27.89%, start price: 284.2, 3 months since acquired, cycles: 2
+stock: Realty Income (real estate trust), current Price: 73.81, change since watching: +5.5%, start price: 69.96, cycles: 3
+stock: Freeport-McMoRan (mining company), current Price: 50.485, change since watching: +51.2%, start price: 33.39, cycles: 2
+אפר׳ 19, 2022 9:33:46 אחה״צ app.Watcher watch
+INFO: 
+
+CHECK stock of BMY
+CHECK stock of TDY
+CHECK stock of FCX
+אפר׳ 19, 2022 9:33:46 אחה״צ app.Watcher watch
+INFO: 
+NOTICE: S&P500 GOES UP BY: 1.17. THAT'S UNUSUAL. ACT WISELY!.
+אפר׳ 19, 2022 9:34:49 אחה״צ app.Watcher watch
+INFO: 
+SELL stock: Abbott Laboratories, current Price: 119.28, change since watching: +19.28%, start price: 100.0, 59 days since acquired, cycles: 17
+stock: Amazon, current Price: 3137.23, change since watching: ‎-9.07%, start price: 3450.0, 4 months since acquired, cycles: 1
+stock: Boeing, current Price: 186.2695, change since watching: ‎-15.73%, start price: 221.05, 2 months since acquired, cycles: 4
+stock: Bristol-Myers Squibb, current Price: 76.105, change since watching: +30.09%, start price: 58.5, 4 months since acquired, cycles: 1
+stock: Nvidia, current Price: 220.09, change since watching: ‎-33.31%, start price: 330.0, 4 months since acquired, cycles: 3
+stock: KLA Corporation, current Price: 335.6, change since watching: ‎-18.94%, start price: 414.0, 3 months since acquired, cycles: 3
+stock: Electronic arts, current Price: 123.57, change since watching: ‎-8.47%, start price: 135.0, 2 months since acquired, cycles: 4
+stock: Applied Materials, current Price: 116.265, change since watching: ‎-11.25%, start price: 131.0, 10 days since acquired, cycles: 3
+stock: Starbux, current Price: 81.0714, change since watching: ‎-27.12%, start price: 111.24, 3 months since acquired, cycles: 2
+stock: Ralph Lauren, current Price: 112.05, change since watching: ‎-1.1%, start price: 113.3, 10 days since acquired, cycles: 4
+stock: Becton Dickinson (med tech), current Price: 261.91, change since watching: +2.31%, start price: 256.0, cycles: 3
+stock: Align Technology (med tech), current Price: 424.92, change since watching: ‎-30.57%, start price: 612.0, 3 months since acquired, cycles: 3
+stock: *********************************************
+stock: Texas Instruments (processors), current Price: 177.5, change since watching: ‎-8.03%, start price: 193.0, 3 months since acquired, cycles: 3
+stock: Match Group (dating apps), current Price: 93.945, change since watching: ‎-31.92%, start price: 138.0, 3 months since acquired, cycles: 2
+stock: Hasbro (board games), current Price: 88.125, change since watching: ‎-10.08%, start price: 98.0, 56 days since acquired, cycles: 3
+stock: Teledyne Technologies (high tech), current Price: 480.17, change since watching: +11.67%, start price: 430.0, cycles: 3
+stock: Ross Stores (clothes and stuff), current Price: 106.9, change since watching: ‎-10.92%, start price: 120.0, 3 months since acquired, cycles: 2
+stock: NXP Semiconductors, current Price: 177.24, change since watching: ‎-11.38%, start price: 200.0, 2 months since acquired, cycles: 3
+stock: Aptiv PLC (automotive), current Price: 109.8, change since watching: ‎-26.8%, start price: 150.0, 2 months since acquired, cycles: 2
+stock: TJX Companies (Home and clothes stuff), current Price: 65.2499, change since watching: ‎-2.54%, start price: 66.95, 55 days since acquired, cycles: 2
+stock: Analog Devices, current Price: 161.09, change since watching: ‎-4%, start price: 167.8, 10 days since acquired, cycles: 4
+stock: Fortive Corporation (high tech), current Price: 58.98, change since watching: ‎-19.35%, start price: 73.13, 2 months since acquired, cycles: 2
+stock: Kimberly-Clark (Toilet stuff), current Price: 126.49, change since watching: ‎-5.53%, start price: 133.9, 53 days since acquired, cycles: 2
+stock: CarMax (used cars), current Price: 95.74, change since watching: ‎-22.54%, start price: 123.6, 3 months since acquired, cycles: 2
+stock: Amcor (Containers/Packaging) *new stock, current Price: 11.755, change since watching: +1.36%, start price: 11.5978, cycles: 3
+stock: Autodesk (3D design), current Price: 204.91, change since watching: ‎-27.9%, start price: 284.2, 3 months since acquired, cycles: 2
+stock: Realty Income (real estate trust), current Price: 73.7937, change since watching: +5.48%, start price: 69.96, cycles: 3
+stock: Freeport-McMoRan (mining company), current Price: 50.465, change since watching: +51.14%, start price: 33.39, cycles: 2
+אפר׳ 19, 2022 9:34:49 אחה״צ app.Watcher watch
+INFO: 
+
+CHECK stock of ABT
+CHECK stock of BMY
+CHECK stock of TDY
+CHECK stock of FCX
+אפר׳ 19, 2022 9:34:49 אחה״צ app.Watcher watch
+INFO: 
+NOTICE: S&P500 GOES UP BY: 1.14. THAT'S UNUSUAL. ACT WISELY!.
+NOTICE: S&P500 GOES UP BY: 1.15. THAT'S UNUSUAL. ACT WISELY!.
+אפר׳ 19, 2022 9:56:16 אחה״צ app.Watcher watch
+INFO: 
+SELL stock: Abbott Laboratories, current Price: 119.55, change since watching: +19.55%, start price: 100.0, 59 days since acquired, cycles: 17
+stock: Amazon, current Price: 3144.5, change since watching: ‎-8.86%, start price: 3450.0, 4 months since acquired, cycles: 1
+stock: Boeing, current Price: 186.47, change since watching: ‎-15.64%, start price: 221.05, 2 months since acquired, cycles: 4
+stock: Bristol-Myers Squibb, current Price: 76.315, change since watching: +30.45%, start price: 58.5, 4 months since acquired, cycles: 1
+stock: Nvidia, current Price: 220.86, change since watching: ‎-33.07%, start price: 330.0, 4 months since acquired, cycles: 3
+stock: KLA Corporation, current Price: 336.7625, change since watching: ‎-18.66%, start price: 414.0, 3 months since acquired, cycles: 3
+stock: Electronic arts, current Price: 123.75, change since watching: ‎-8.33%, start price: 135.0, 2 months since acquired, cycles: 4
+stock: Applied Materials, current Price: 116.58, change since watching: ‎-11.01%, start price: 131.0, 10 days since acquired, cycles: 3
+stock: Starbux, current Price: 81.055, change since watching: ‎-27.14%, start price: 111.24, 3 months since acquired, cycles: 2
+stock: Ralph Lauren, current Price: 112.38, change since watching: ‎-0.81%, start price: 113.3, 10 days since acquired, cycles: 4
+stock: Becton Dickinson (med tech), current Price: 261.88, change since watching: +2.3%, start price: 256.0, cycles: 3
+stock: Align Technology (med tech), current Price: 426.145, change since watching: ‎-30.37%, start price: 612.0, 3 months since acquired, cycles: 3
+stock: *********************************************
+stock: Texas Instruments (processors), current Price: 178.01, change since watching: ‎-7.77%, start price: 193.0, 3 months since acquired, cycles: 3
+stock: Match Group (dating apps), current Price: 93.9, change since watching: ‎-31.96%, start price: 138.0, 3 months since acquired, cycles: 2
+stock: Hasbro (board games), current Price: 88.56, change since watching: ‎-9.63%, start price: 98.0, 56 days since acquired, cycles: 3
+stock: Teledyne Technologies (high tech), current Price: 480.3, change since watching: +11.7%, start price: 430.0, cycles: 3
+stock: Ross Stores (clothes and stuff), current Price: 107.2995, change since watching: ‎-10.58%, start price: 120.0, 3 months since acquired, cycles: 2
+stock: NXP Semiconductors, current Price: 177.805, change since watching: ‎-11.1%, start price: 200.0, 2 months since acquired, cycles: 3
+stock: Aptiv PLC (automotive), current Price: 110.465, change since watching: ‎-26.36%, start price: 150.0, 2 months since acquired, cycles: 2
+stock: TJX Companies (Home and clothes stuff), current Price: 65.22, change since watching: ‎-2.58%, start price: 66.95, 55 days since acquired, cycles: 2
+stock: Analog Devices, current Price: 161.636, change since watching: ‎-3.67%, start price: 167.8, 10 days since acquired, cycles: 4
+stock: Fortive Corporation (high tech), current Price: 58.945, change since watching: ‎-19.4%, start price: 73.13, 2 months since acquired, cycles: 2
+stock: Kimberly-Clark (Toilet stuff), current Price: 126.4896, change since watching: ‎-5.53%, start price: 133.9, 53 days since acquired, cycles: 2
+stock: CarMax (used cars), current Price: 96.23, change since watching: ‎-22.14%, start price: 123.6, 3 months since acquired, cycles: 2
+stock: Amcor (Containers/Packaging) *new stock, current Price: 11.77, change since watching: +1.48%, start price: 11.5978, cycles: 3
+stock: Autodesk (3D design), current Price: 204.34, change since watching: ‎-28.1%, start price: 284.2, 3 months since acquired, cycles: 2
+stock: Realty Income (real estate trust), current Price: 73.98, change since watching: +5.75%, start price: 69.96, cycles: 3
+stock: Freeport-McMoRan (mining company), current Price: 50.545, change since watching: +51.38%, start price: 33.39, cycles: 2
+אפר׳ 19, 2022 9:56:16 אחה״צ app.Watcher watch
+INFO: 
+
+CHECK stock of ABT
+CHECK stock of BMY
+CHECK stock of TDY
+CHECK stock of FCX
+אפר׳ 19, 2022 9:56:16 אחה״צ app.Watcher watch
+INFO: 
+NOTICE: S&P500 GOES UP BY: 1.32. THAT'S UNUSUAL. ACT WISELY!.

@@ -3,6 +3,7 @@ package app;
 import actionDeciders.IActionDecider;
 import actionDeciders.StrategyA;
 import actions.*;
+import candidateStocks.DBCandidateStocksFetcher;
 import candidateStocks.ICandidateStocksFetcher;
 import candidateStocks.JsonFileCandidateStocksFetcher1;
 import entities.EStatus;
@@ -37,7 +38,8 @@ public class Watcher {
         listOfIInvestStrategyPropsReader = new SimpleInvestPropsFetcher().getAllInvestStrategyProps();
         stockList = new ArrayList<>();
         iWalletAction = new WalletActionsImp();
-        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1(System.getProperty("user.dir")+"/src/main//java/configurations/candidateStocks.json");
+//        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1(System.getProperty("user.dir")+"/src/main//java/configurations/candidateStocks.json");
+        iCandidateStocksFetcher=new DBCandidateStocksFetcher();
         stockList = iCandidateStocksFetcher.getCandidateStocks();
         iTestDataHandler=new TestDataHandlerJsonImp(System.getProperty("user.dir")+"/src/main//java/configurations/testData.json");
 //        stockList.forEach(x->logger.info(x.toString()));

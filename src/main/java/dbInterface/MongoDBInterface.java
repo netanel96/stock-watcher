@@ -10,6 +10,7 @@ import org.bson.Document;
 import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static com.mongodb.client.model.Filters.eq;
 
@@ -61,6 +62,18 @@ public class MongoDBInterface implements DbInterface<Document> {
     @Override
     public Document readData(String id) {
         return null;
+    }
+
+    @Override
+    public List<Document> readListOfData(Document document) {
+        return null;
+    }
+
+    @Override
+    public List<Document> readListOfData() {
+        List<Document> res=new ArrayList<>();
+        database.getCollection(collectionName).find().iterator().forEachRemaining(res::add);
+        return  res;
     }
 
     @Override
