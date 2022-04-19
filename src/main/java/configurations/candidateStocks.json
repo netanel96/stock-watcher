@@ -1,1 +1,226 @@
-[{"startPrice":"999","symbol":"ABT","acquiredDate":"none","name":"Abbott Laboratories","cycles":"17","status":"NOT_ACQUIRED"},{"startPrice":"3450","symbol":"AMZN","acquiredDate":"2021-12-14","name":"Amazon","cycles":"1","status":"ACQUIRED"},{"startPrice":"221.05","symbol":"BA","acquiredDate":"2022-01-21","name":"Boeing","cycles":"4","status":"ACQUIRED"},{"startPrice":"58.5","symbol":"BMY","acquiredDate":"2021-11-25","name":"Bristol-Myers Squibb","cycles":"1","status":"NOT_ACQUIRED"},{"startPrice":"330","symbol":"NVDA","acquiredDate":"2021-12-01","name":"Nvidia","cycles":"3","status":"ACQUIRED"},{"startPrice":"414","symbol":"KLAC","acquiredDate":"2022-01-19","name":"KLA Corporation","cycles":"3","status":"ACQUIRED"},{"startPrice":"135","symbol":"EA","acquiredDate":"2022-02-17","name":"Electronic arts","cycles":"4","status":"ACQUIRED"},{"startPrice":"131","symbol":"AMAT","acquiredDate":"none","name":"Applied Materials","cycles":"2","status":"NOT_ACQUIRED"},{"startPrice":"111.24","symbol":"SBUX","acquiredDate":"2022-01-08","name":"Starbux","cycles":"2","status":"ACQUIRED"},{"startPrice":"113.3","symbol":"RL","acquiredDate":"none","name":"Ralph Lauren","cycles":"3","status":"NOT_ACQUIRED"},{"startPrice":"256","symbol":"BDX","acquiredDate":"none","name":"Becton Dickinson (med tech)","cycles":"3","status":"NOT_ACQUIRED"},{"startPrice":"612","symbol":"ALGN","acquiredDate":"2022-01-06","name":"Align Technology (med tech)","cycles":"3","status":"ACQUIRED"},{"startPrice":"193","symbol":"TXN","acquiredDate":"2022-01-06","name":"*********************************************\nstock: Texas Instruments (processors)","cycles":"3","status":"ACQUIRED"},{"startPrice":"138","symbol":"MTCH","acquiredDate":"2021-12-30","name":"Match Group (dating apps)","cycles":"2","status":"ACQUIRED"},{"startPrice":"98","symbol":"HAS","acquiredDate":"none","name":"Hasbro (board games)","cycles":"3","status":"NOT_ACQUIRED"},{"startPrice":"430","symbol":"TDY","acquiredDate":"2022-01-10","name":"Teledyne Technologies (high tech)","cycles":"2","status":"ACQUIRED"},{"startPrice":"120","symbol":"ROST","acquiredDate":"2021-12-30","name":"Ross Stores (clothes and stuff)","cycles":"2","status":"ACQUIRED"},{"startPrice":"200","symbol":"NXPI","acquiredDate":"2022-02-12","name":"NXP Semiconductors","cycles":"3","status":"ACQUIRED"},{"startPrice":"150","symbol":"APTV","acquiredDate":"2022-01-20","name":"Aptiv PLC (automotive)","cycles":"2","status":"ACQUIRED"},{"startPrice":"66.95","symbol":"TJX","acquiredDate":"none","name":"TJX Companies (Home and clothes stuff)","cycles":"2","status":"NOT_ACQUIRED"},{"startPrice":"167.8","symbol":"ADI","acquiredDate":"2022-02-10","name":"Analog Devices","cycles":"3","status":"ACQUIRED"},{"startPrice":"73.13","symbol":"FTV","acquiredDate":"2022-01-27","name":"Fortive Corporation (high tech)","cycles":"2","status":"ACQUIRED"},{"startPrice":"133.9","symbol":"KMB","acquiredDate":"none","name":"Kimberly-Clark (Toilet stuff)","cycles":"2","status":"NOT_ACQUIRED"},{"startPrice":"123.6","symbol":"KMX","acquiredDate":"2022-01-06","name":"CarMax (used cars)","cycles":"2","status":"ACQUIRED"},{"startPrice":"11.5978","symbol":"AMCR","acquiredDate":"none","name":"Amcor (Containers\/Packaging) *new stock","cycles":"2","status":"NOT_ACQUIRED"},{"startPrice":"284.2","symbol":"ADSK","acquiredDate":"2022-01-04","name":"Autodesk (3D design)","cycles":"2","status":"ACQUIRED"},{"startPrice":"69.96","symbol":"O","acquiredDate":"2022-01-21","name":"Realty Income (real estate trust)","cycles":"2","status":"ACQUIRED"},{"startPrice":"33.39","symbol":"FCX","acquiredDate":"none","name":"Freeport-McMoRan (mining company)","cycles":"2","status":"NOT_ACQUIRED"}]
+[
+  {
+    "startPrice": "999",
+    "symbol": "ABT",
+    "acquiredDate": "2022-02-19",
+    "name": "Abbott Laboratories",
+    "cycles": "17",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "3450",
+    "symbol": "AMZN",
+    "acquiredDate": "2021-12-14",
+    "name": "Amazon",
+    "cycles": "1",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "221.05",
+    "symbol": "BA",
+    "acquiredDate": "2022-01-21",
+    "name": "Boeing",
+    "cycles": "4",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "58.5",
+    "symbol": "BMY",
+    "acquiredDate": "2021-11-25",
+    "name": "Bristol-Myers Squibb",
+    "cycles": "1",
+    "status": "NOT_ACQUIRED"
+  },
+  {
+    "startPrice": "330",
+    "symbol": "NVDA",
+    "acquiredDate": "2021-12-01",
+    "name": "Nvidia",
+    "cycles": "3",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "414",
+    "symbol": "KLAC",
+    "acquiredDate": "2022-01-19",
+    "name": "KLA Corporation",
+    "cycles": "3",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "135",
+    "symbol": "EA",
+    "acquiredDate": "2022-02-17",
+    "name": "Electronic arts",
+    "cycles": "4",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "131",
+    "symbol": "AMAT",
+    "acquiredDate": "2022-04-09",
+    "name": "Applied Materials",
+    "cycles": "3",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "111.24",
+    "symbol": "SBUX",
+    "acquiredDate": "2022-01-08",
+    "name": "Starbux",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "113.3",
+    "symbol": "RL",
+    "acquiredDate": "2022-04-09",
+    "name": "Ralph Lauren",
+    "cycles": "4",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "256",
+    "symbol": "BDX",
+    "acquiredDate": "none",
+    "name": "Becton Dickinson (med tech)",
+    "cycles": "3",
+    "status": "NOT_ACQUIRED"
+  },
+  {
+    "startPrice": "612",
+    "symbol": "ALGN",
+    "acquiredDate": "2022-01-06",
+    "name": "Align Technology (med tech)",
+    "cycles": "3",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "193",
+    "symbol": "TXN",
+    "acquiredDate": "2022-01-06",
+    "name": "*********************************************\nstock: Texas Instruments (processors)",
+    "cycles": "3",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "138",
+    "symbol": "MTCH",
+    "acquiredDate": "2021-12-30",
+    "name": "Match Group (dating apps)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "98",
+    "symbol": "HAS",
+    "acquiredDate": "2022-02-22",
+    "name": "Hasbro (board games)",
+    "cycles": "3",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "430",
+    "symbol": "TDY",
+    "acquiredDate": "none",
+    "name": "Teledyne Technologies (high tech)",
+    "cycles": "3",
+    "status": "NOT_ACQUIRED"
+  },
+  {
+    "startPrice": "120",
+    "symbol": "ROST",
+    "acquiredDate": "2021-12-30",
+    "name": "Ross Stores (clothes and stuff)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "200",
+    "symbol": "NXPI",
+    "acquiredDate": "2022-02-12",
+    "name": "NXP Semiconductors",
+    "cycles": "3",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "150",
+    "symbol": "APTV",
+    "acquiredDate": "2022-01-20",
+    "name": "Aptiv PLC (automotive)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "66.95",
+    "symbol": "TJX",
+    "acquiredDate": "2022-02-23",
+    "name": "TJX Companies (Home and clothes stuff)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "167.8",
+    "symbol": "ADI",
+    "acquiredDate": "2022-04-09",
+    "name": "Analog Devices",
+    "cycles": "4",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "73.13",
+    "symbol": "FTV",
+    "acquiredDate": "2022-01-27",
+    "name": "Fortive Corporation (high tech)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "133.9",
+    "symbol": "KMB",
+    "acquiredDate": "2022-02-25",
+    "name": "Kimberly-Clark (Toilet stuff)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "123.6",
+    "symbol": "KMX",
+    "acquiredDate": "2022-01-06",
+    "name": "CarMax (used cars)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "11.5978",
+    "symbol": "AMCR",
+    "acquiredDate": "none",
+    "name": "Amcor (Containers\/Packaging) *new stock",
+    "cycles": "3",
+    "status": "NOT_ACQUIRED"
+  },
+  {
+    "startPrice": "284.2",
+    "symbol": "ADSK",
+    "acquiredDate": "2022-01-04",
+    "name": "Autodesk (3D design)",
+    "cycles": "2",
+    "status": "ACQUIRED"
+  },
+  {
+    "startPrice": "69.96",
+    "symbol": "O",
+    "acquiredDate": "none",
+    "name": "Realty Income (real estate trust)",
+    "cycles": "3",
+    "status": "NOT_ACQUIRED"
+  },
+  {
+    "startPrice": "33.39",
+    "symbol": "FCX",
+    "acquiredDate": "none",
+    "name": "Freeport-McMoRan (mining company)",
+    "cycles": "2",
+    "status": "NOT_ACQUIRED"
+  }
+]

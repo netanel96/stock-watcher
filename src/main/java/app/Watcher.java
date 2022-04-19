@@ -10,6 +10,7 @@ import entities.Stock;
 import investProps.*;
 import stockDataFetcher.IStockDataProvider;
 import stockDataFetcher.StockDataProvider;
+import warnings.WarningData;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -68,11 +69,20 @@ public class Watcher {
         List<Stock> finalStockList = stockList;
         listOfIInvestStrategyPropsReader.forEach(investPropsStrategyReader ->
                 finalStockList.forEach(stock -> watchStock(stock, investPropsStrategyReader)));
+
         System.out.println(iActionDecider.printDataForMonitor());
         logger.info(iActionDecider.printDataForMonitor());
         if (!iCandidateStocksFetcher.printUpdateStockFileActions().equals("")) System.out.println("\nupdates in candidate file:" + iCandidateStocksFetcher.printUpdateStockFileActions());
+
         System.out.println("\nWALLET_ACTIONS:" + iWalletAction.printAllWalletActions());
         logger.info("\n"+iWalletAction.printAllWalletActions());
+
+        String generalWarnings= WarningData.getWarningData();
+        if (generalWarnings!=null) {
+            System.out.println(generalWarnings);
+            logger.info(generalWarnings);
+        }
+
     }
 
     private void watchStock(Stock stock, IInvestStrategyPropsReader investStrategyPropsReader) {

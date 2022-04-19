@@ -30,4 +30,13 @@ public class StockDataProvider implements IStockDataProvider {
         }
         return stockPrice;
     }
+
+    public double getStockChangeInPercentage(String stockSymbol){
+        try {
+            return yahooStocksData.get(stockSymbol).getQuote(true).getChangeInPercent().doubleValue();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return 1000000000000d;
+    }
 }

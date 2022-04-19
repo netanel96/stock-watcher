@@ -1,11 +1,13 @@
 package actionDeciders;
 
+import app.LoggerUtils;
+import app.Watcher;
 import entities.EStatus;
 import entities.Stock;
 import investProps.InvestProps;
 import actions.EWalletAction;
 import stockDataFetcher.IStockDataProvider;
-import stockDataFetcher.StockDataProvider;
+import warnings.WarningData;
 
 import java.text.DecimalFormat;
 import java.time.LocalDate;
@@ -27,7 +29,9 @@ public class StrategyA implements IActionDecider{
     final static double CHECK_FACTOR=3;
     static String monitoringData="";
     static String SP_500_SYMBOL="^GSPC";
-    static double SP_500_PRICE;
+    static double SP_500_PRICE_CHANGE;
+    static double SP_500_THRESHOLD_CHANGE=0.45;
+
     public StrategyA(Stock stock, InvestProps investProps, double currentStockPrice){
 //        currentStockPrice=250;
         decidedWalletAction =EWalletAction.NONE;
@@ -48,7 +52,20 @@ public class StrategyA implements IActionDecider{
         this.currentStockPrice=currentStockPrice;
         difference = currentStockPrice - startPrice;
         diffPercentage = difference / startPrice;
-        SP_500_PRICE=stockDataProvider.getStockPrice(SP_500_SYMBOL);
+        SP_500_PRICE_CHANGE=stockDataProvider.getStockChangeInPercentage(SP_500_SYMBOL);
+        checkForWarnings();
+    }
+
+    private void checkForWarnings() {
+        if (Math.abs(SP_500_PRICE_CHANGE)>SP_500_THRESHOLD_CHANGE) {
+            if (SP_500_PRICE_CHANGE > 0) {
+                String warningString = "\nNOTICE: S&P500 GOES UP BY: " + SP_500_PRICE_CHANGE + ". THAT'S UNUSUAL. ACT WISELY!.";
+                WarningData.addWarningData(warningString);
+            } else if (SP_500_PRICE_CHANGE <= 0) {
+                String warningString = "\nWARNING: S&P500 GOES DOWN BY: " + SP_500_PRICE_CHANGE + " . THAT'S UNUSUAL. ACT CAREFULLY!.";
+                WarningData.addWarningData(warningString);
+            }
+        }
     }
 
     @Override
@@ -78,13 +95,7 @@ public class StrategyA implements IActionDecider{
         if (diffPercentage >= percentageEntry * CHECK_FACTOR) {
             decidedWalletAction = EWalletAction.CHECK;
         }
-        //TODO fix condition for if SP500 going big change up or down.
-        if (1==4){
-            String warningString="";
 
-            monitoringData+=warningString;
-            decidedWalletAction = EWalletAction.CHECK;
-        }
     }
 
     //TODO decide how to know how much to waite before sell/buy. maybe waite for more down/up days before action?.
@@ -95,10 +106,12 @@ public class StrategyA implements IActionDecider{
             decidedWalletAction = EWalletAction.SELL;
             actionStr=EWalletAction.SELL.getActionName()+" ";
         }
-        if (startPrice==999){
-            decidedWalletAction = EWalletAction.SELL;
-            actionStr=EWalletAction.SELL.getActionName()+" ";
-        }
+
+        //only to test if it writes to a file.
+//        if (startPrice==999){
+//            decidedWalletAction = EWalletAction.SELL;
+//            actionStr=EWalletAction.SELL.getActionName()+" ";
+//        }
     }
 
     private void shouldBuy() {
