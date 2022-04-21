@@ -41,9 +41,9 @@ public class Watcher {
 //        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1(System.getProperty("user.dir")+"/src/main//java/configurations/candidateStocks.json");
         iCandidateStocksFetcher=new DBCandidateStocksFetcher();
         stockList = iCandidateStocksFetcher.getCandidateStocks();
-        //TODO fix it to work with two collections.and be singlton.
-        iTestDataHandler=new TestDataHandlerJsonImp(System.getProperty("user.dir")+"/src/main//java/configurations/testData.json");
-//        iTestDataHandler=new DBTestDataHandler();
+        //TODO fix it to work with two collections.and be singleton.
+//        iTestDataHandler=new TestDataHandlerJsonImp(System.getProperty("user.dir")+"/src/main//java/configurations/testData.json");
+        iTestDataHandler=new DBTestDataHandler();
 
 //        stockList.forEach(x->logger.info(x.toString()));
         stockDataFetcher=new StockDataProvider();

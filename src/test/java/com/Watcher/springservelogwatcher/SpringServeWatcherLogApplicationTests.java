@@ -57,7 +57,7 @@ class SpringServeWatcherLogApplicationTests {
 	void updateTestDataTest(){
 		DBTestDataHandler dbTestDataHandler=new DBTestDataHandler();
 
-		Stock stock=new Stock("TESTTT","Abbott Laboratories",999,
+		Stock stock=new Stock("TESTT","Abbott Laboratories",999,
 				"ACQUIRED","2022-02-19","17");
 
 		InvestProps investProps = new InvestProps(0.03d);
