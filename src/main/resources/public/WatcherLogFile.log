@@ -4014,3 +4014,377 @@ INFO:
 
 Connected to MongoDB!!
 
+אפר׳ 21, 2022 3:22:57 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:22:59 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:23:04 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:23:05 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:23:05 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:23:06 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:09 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:14 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:15 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:15 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:35 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:40 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:40 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:41 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:51 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:25:53 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:57 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:58 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:58 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:25:59 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:27:26 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:27:31 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:27:36 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:28:06 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:28:27 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:28:42 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:32:51 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:32:53 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:32:58 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:33:09 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:33:09 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:33:10 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:33:42 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:34:11 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:38:01 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:39:40 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:42:34 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:42:36 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:42:42 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:42:42 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:42:43 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:42:43 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:46:44 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:46:46 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:46:51 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:46:52 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:46:52 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:46:53 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:48:29 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:48:31 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:48:36 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:48:37 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:48:37 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:48:38 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:55:17 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:55:18 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:55:24 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:55:24 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:55:25 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:55:25 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:58:11 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:58:15 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:58:15 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:58:16 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:58:16 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:58:16 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:58:17 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:59:21 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:59:25 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:59:25 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:59:26 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:59:26 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating MongoDb..
+אפר׳ 21, 2022 3:59:26 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 3:59:27 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 4:01:38 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updating in MongoDb...
+אפר׳ 21, 2022 4:01:40 אחה״צ dbInterface.MongoDBInterface <init>
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 4:01:44 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 4:01:44 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 4:01:45 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 4:01:45 אחה״צ com.Watcher.springservelogwatcher.SpringServeWatcherLogApplication runMainWatcher
+INFO: updated a stock in MongoDb.
+אפר׳ 21, 2022 4:01:45 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
+אפר׳ 21, 2022 4:01:45 אחה״צ dbInterface.MongoDBInterface selectCollection
+INFO: 
+
+Connected to MongoDB!!
+
