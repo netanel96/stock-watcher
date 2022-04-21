@@ -39,14 +39,21 @@ public class DBCandidateStocksFetcher implements ICandidateStocksFetcher {
     }
 
     public static Stock fromDocumentToStock(Document document) {
-        return new Stock(
-                document.get(symbol).toString(),
-                document.get(name).toString(),
-                Double.parseDouble(document.get(startPrice).toString()),
+        Stock stock=null;
+        try {
+            stock = new Stock(
+                    document.get(symbol).toString(),
+                    document.get(name).toString(),
+                    Double.parseDouble(document.get(startPrice).toString()),
 
-                document.get(status).toString(),
-                document.get(acquiredDate).toString(),
-                document.get(cycles).toString());
+                    document.get(status).toString(),
+                    document.get(acquiredDate).toString(),
+                    document.get(cycles).toString());
+        } catch (NumberFormatException e) {
+            System.out.println("could not convert document to stock Object.\ndocument:"+document.toString());
+            e.printStackTrace();
+        }
+        return stock;
     }
 
     public void createCandidateStock(Stock stock) {

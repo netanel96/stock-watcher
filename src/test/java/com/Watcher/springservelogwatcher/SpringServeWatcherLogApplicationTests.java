@@ -70,7 +70,7 @@ class SpringServeWatcherLogApplicationTests {
 		try {
 			DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
 			Stock stock=new Stock("ABT","Abbott Laboratories",11,
-					"ACQUIRED","2022-02-19","133");
+					"ACQUIRED","2022-02-19","1333");
 			dbCandidateStocksFetcher.UpdateStock(stock);
 			System.out.println(dbCandidateStocksFetcher.printUpdateStockFileActions());
 		} catch (Exception e) {

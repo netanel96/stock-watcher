@@ -19,22 +19,18 @@ public class SpringServeWatcherLogApplication {
 
 	private static void runMainWatcher(String[] args){
 		try {
-			Timer time = new Timer(); // Instantiate Timer Object
-			WatcherScheduledTask st = new WatcherScheduledTask(); // Instantiate SheduledTask class
-			time.schedule(st, 0, 1000*2400); //
-
-//			Watcher watcher = new Watcher();
-//			System.out.println("watching..");
-//			watcher.watch();
-
-			logger.info("updating MongoDb..");
-			DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
-			Stock stock=new Stock("ABT","Abbott Laboratories",999,
-					"ACQUIRED","2022-04-19","123");
+			logger.info("updating in MongoDb...");
+			DBCandidateStocksFetcher dbCandidateStocksFetcher = new DBCandidateStocksFetcher();
+			Stock stock = new Stock("ABT", "Abbott Laboratories", 999,
+					"ACQUIRED", "2022-04-19", "123");
 			dbCandidateStocksFetcher.UpdateStock(stock);
+			logger.info("updated a stock in MongoDb.");
+			System.out.println("db connection is good.");
 
+			Timer time = new Timer();
+			WatcherScheduledTask st = new WatcherScheduledTask();
+			time.schedule(st, 0, 1000*2400);
 
-//			DBCandidateStocksFetcher.mongoDBInterface.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("ERROR, some shit happend.");
