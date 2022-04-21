@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Deprecated
 public class JsonFileCandidateStocksFetcher1 extends AbstractJsonArrayIO<Stock> implements  ICandidateStocksFetcher{
     String candidateStocksPath=System.getProperty("user.dir") + "\\src\\main\\java\\configurations\\candidateStocks.json";
 //    String candidateStocksPath="C:\\MyProjects\\Watch\\candidateStocks.json";

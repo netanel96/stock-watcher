@@ -1,5 +1,7 @@
 package com.Watcher.springservelogwatcher;
 
+import actions.testActions.DBTestDataHandler;
+import actions.testActions.TestDataHandlerJsonImp;
 import candidateStocks.DBCandidateStocksFetcher;
 import candidateStocks.JsonFileCandidateStocksFetcher1;
 import com.mongodb.*;
@@ -8,6 +10,8 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import entities.Stock;
+import entities.TestData;
+import investProps.InvestProps;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.junit.Assert;
@@ -32,7 +36,7 @@ class SpringServeWatcherLogApplicationTests {
 	}
 
 	@Test
-	void createStockCandidate(){
+	void createStockCandidateTest(){
 		DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
 		Stock stock=new Stock("ABT","Abbott Laboratories",999,
 				"ACQUIRED","2022-02-19","17");
@@ -40,7 +44,29 @@ class SpringServeWatcherLogApplicationTests {
 	}
 
 	@Test
-	void UpdateStockCandidate(){
+	void createTestDataTest(){
+		TestDataHandlerJsonImp testDataHandlerJsonImp=new TestDataHandlerJsonImp(System.getProperty("user.dir")+"/src/main//java/configurations/testData.json");
+		TestData testData=testDataHandlerJsonImp.getTestData();
+
+
+		DBTestDataHandler dbTestDataHandler=new DBTestDataHandler();
+		dbTestDataHandler.createTestData(testData);
+	}
+
+	@Test
+	void updateTestDataTest(){
+		DBTestDataHandler dbTestDataHandler=new DBTestDataHandler();
+
+		Stock stock=new Stock("TESTTT","Abbott Laboratories",999,
+				"ACQUIRED","2022-02-19","17");
+
+		InvestProps investProps = new InvestProps(0.03d);
+
+		dbTestDataHandler.updateTestData(stock,investProps);
+	}
+
+	@Test
+	void UpdateStockCandidateTest(){
 		try {
 			DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
 			Stock stock=new Stock("ABT","Abbott Laboratories",11,
@@ -73,7 +99,7 @@ class SpringServeWatcherLogApplicationTests {
 	}
 
 	@Test
-	void getAllCandidateStocks(){
+	void getAllCandidateStocksTest(){
 		DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
 		System.out.println("test res:all stocks:"+dbCandidateStocksFetcher.getCandidateStocks());
 

@@ -18,22 +18,73 @@ import java.util.logging.Logger;
 import static com.mongodb.client.model.Filters.eq;
 
 public class MongoDBInterface implements DbInterface<Document> {
-    //    private static MongoDBInterface mongoDBInterface;
+    //TODO upload to git without credentials!.
+    private static String uri = "mongodb+srv://nati:katana@cluster0.ffca4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    private static String dbName = "myFirstDatabase";
+
+
+    private static MongoDBInterface mongoDBInterface;
     private static MongoClient mongoClient;
     private static MongoDatabase database;
-    private static String  collectionName;
-    Logger logger = LoggerUtils.getLogger(SpringServeWatcherLogApplication.class.getName());
-    public MongoDBInterface(String uri, String dbName,String collectionName) {
+    private static String collectionName;
+    static Logger logger = LoggerUtils.getLogger(SpringServeWatcherLogApplication.class.getName());
+
+    public static MongoDBInterface getInstance() {
+        if (mongoDBInterface == null) {
+            mongoDBInterface=new MongoDBInterface();
+//            try {
+//                ConnectionString connectionString = new ConnectionString(uri);
+//                MongoClientSettings settings = MongoClientSettings.builder()
+//                        .applyConnectionString(connectionString)
+//                        .build();
+//                mongoClient = MongoClients.create(settings);
+//            } catch (Exception e) {
+//                System.out.println("Couldn't connect to mongo db\n");
+//                e.printStackTrace();
+//            }
+//
+//
+//            try {
+//                database = mongoClient.getDatabase(dbName);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//            selectCollection(collectionName);
+
+        }
+        return mongoDBInterface;
+    }
+
+    public MongoDBInterface selectCollection(String collectionName){
+        try {
+            MongoDBInterface.collectionName =collectionName;
+
+            boolean collectionExists = database.listCollectionNames()
+                    .into(new ArrayList<String>()).contains(collectionName);
+            if (collectionExists == false) {
+                database.createCollection(MongoDBInterface.collectionName);
+            }
+
+
+            logger.info("\n\nConnected to MongoDB!!\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return mongoDBInterface;
+    }
+
+
+    private MongoDBInterface() {
         try {
             if (mongoClient == null) {
                 initDB(uri);
                 database = mongoClient.getDatabase(dbName);
-                this.collectionName=collectionName;
-                boolean collectionExists = database.listCollectionNames()
-                        .into(new ArrayList<String>()).contains(collectionName);
-                if (collectionExists==false){
-                    database.createCollection(collectionName);
-                }
+//                this.collectionName = collectionName;
+//                boolean collectionExists = database.listCollectionNames()
+//                        .into(new ArrayList<String>()).contains(collectionName);
+//                if (collectionExists == false) {
+//                    database.createCollection(collectionName);
+//                }
                 logger.info("\n\nConnected to MongoDB!!\n");
             }
 
@@ -65,7 +116,11 @@ public class MongoDBInterface implements DbInterface<Document> {
 
     @Override
     public Document readData(String id) {
-        return null;
+        //TODO fix it to realy read according to ID! instead of returning first document.
+        List<Document> res=new ArrayList<>();
+        database.getCollection(collectionName).find().iterator().
+                forEachRemaining(document -> {res.add(document);});
+        return res.get(0);
     }
 
     @Override
@@ -75,15 +130,15 @@ public class MongoDBInterface implements DbInterface<Document> {
 
     @Override
     public List<Document> readListOfData() {
-        List<Document> res=new ArrayList<>();
+        List<Document> res = new ArrayList<>();
         database.getCollection(collectionName).find().iterator().forEachRemaining(res::add);
-        return  res;
+        return res;
     }
 
     @Override
-    public void updateData(String id , Document data) {
+    public void updateData(String id, Document data) {
         Bson query = eq(id, data.get(id));
-        database.getCollection(collectionName).replaceOne(query,data);
+        database.getCollection(collectionName).replaceOne(query, data);
     }
 
     @Override

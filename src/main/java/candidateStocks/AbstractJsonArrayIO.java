@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Deprecated
 public abstract class  AbstractJsonArrayIO<T> {
     String path;
     JSONParser jsonParser = new JSONParser();

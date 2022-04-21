@@ -143,7 +143,6 @@ public class StrategyA implements IActionDecider{
 //TODO things to do so it can run independently:
 // 1.strategy for updating start price.
 // 2.strategy for how much to waite when its passes the percentageEntry before buy/sell.(most of the time more waite would have given better results)
-// 3.add warning for when s&p500 is going more then usual low or up.
     @Override
     public String printDataForMonitor() {
         return monitoringData;

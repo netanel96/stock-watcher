@@ -3,9 +3,11 @@ package app;
 import actionDeciders.IActionDecider;
 import actionDeciders.StrategyA;
 import actions.*;
+import actions.testActions.DBTestDataHandler;
+import actions.testActions.ITestDataHandler;
+import actions.testActions.TestDataHandlerJsonImp;
 import candidateStocks.DBCandidateStocksFetcher;
 import candidateStocks.ICandidateStocksFetcher;
-import candidateStocks.JsonFileCandidateStocksFetcher1;
 import entities.EStatus;
 import entities.Stock;
 import investProps.*;
@@ -13,9 +15,7 @@ import stockDataFetcher.IStockDataProvider;
 import stockDataFetcher.StockDataProvider;
 import warnings.WarningData;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -41,7 +41,10 @@ public class Watcher {
 //        iCandidateStocksFetcher = new JsonFileCandidateStocksFetcher1(System.getProperty("user.dir")+"/src/main//java/configurations/candidateStocks.json");
         iCandidateStocksFetcher=new DBCandidateStocksFetcher();
         stockList = iCandidateStocksFetcher.getCandidateStocks();
+        //TODO fix it to work with two collections.and be singlton.
         iTestDataHandler=new TestDataHandlerJsonImp(System.getProperty("user.dir")+"/src/main//java/configurations/testData.json");
+//        iTestDataHandler=new DBTestDataHandler();
+
 //        stockList.forEach(x->logger.info(x.toString()));
         stockDataFetcher=new StockDataProvider();
         stockDataFetcher.initStockData(getTickersStringArray());
@@ -127,6 +130,5 @@ public class Watcher {
 // 1.look at print of acuired when changed, for some reason its not changed on print.
 // 2.fix testData for counting loses (according to a configurable lose definition) and add more data on each win/lose.
 // 3.add seperaation of logs in ui. to show in one button the user output which is simple action buy/sell/check stock x.and in other button to show detailed state of each watched stock,and in another button to show detailed history of (test and real) actions and win lose values and a sum.
-// 4. cant write on heroku file system.use solution is to write to external db.
 // 5.add  schedular in heroku to make it watch for stocks always.
 }

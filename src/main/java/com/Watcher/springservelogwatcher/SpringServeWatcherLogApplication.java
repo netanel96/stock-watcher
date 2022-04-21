@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
+import java.util.Timer;
 import java.util.logging.Logger;
 
 
@@ -18,15 +19,22 @@ public class SpringServeWatcherLogApplication {
 
 	private static void runMainWatcher(String[] args){
 		try {
-			Watcher watcher = new Watcher();
-			System.out.println("watching..");
+			Timer time = new Timer(); // Instantiate Timer Object
+			WatcherScheduledTask st = new WatcherScheduledTask(); // Instantiate SheduledTask class
+			time.schedule(st, 0, 1000*2400); //
+
+//			Watcher watcher = new Watcher();
+//			System.out.println("watching..");
+//			watcher.watch();
+
 			logger.info("updating MongoDb..");
 			DBCandidateStocksFetcher dbCandidateStocksFetcher=new DBCandidateStocksFetcher();
 			Stock stock=new Stock("ABT","Abbott Laboratories",999,
 					"ACQUIRED","2022-04-19","123");
 			dbCandidateStocksFetcher.UpdateStock(stock);
-			watcher.watch();
-			DBCandidateStocksFetcher.mongoDBInterface.close();
+
+
+//			DBCandidateStocksFetcher.mongoDBInterface.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("ERROR, some shit happend.");

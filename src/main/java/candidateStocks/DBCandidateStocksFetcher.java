@@ -8,15 +8,17 @@ import org.bson.Document;
 import java.util.*;
 import java.util.stream.Collectors;
 
+//TODO refactor it to work with DAO pattern.
 public class DBCandidateStocksFetcher implements ICandidateStocksFetcher {
-    public static DbInterface<Document> mongoDBInterface;
+    static String collectionName = "CandidateStocks";
+    public static DbInterface<Document> mongoDBInterface=MongoDBInterface.getInstance().selectCollection(collectionName);
 
-    static {
-        String uri = "mongodb+srv://nati:katana@cluster0.ffca4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-        String dbName = "myFirstDatabase";
-        String collectionName = "CandidateStocks";
-        mongoDBInterface = new MongoDBInterface(uri, dbName, collectionName);
-    }
+//    static {
+//        String uri = "mongodb+srv://nati:katana@cluster0.ffca4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+//        String dbName = "myFirstDatabase";
+//        String collectionName = "CandidateStocks";
+//        mongoDBInterface = new MongoDBInterface(uri, dbName, collectionName);
+//    }
 
     final static String symbol = "symbol";
     final static String name = "name";
@@ -48,13 +50,13 @@ public class DBCandidateStocksFetcher implements ICandidateStocksFetcher {
     }
 
     public void createCandidateStock(Stock stock) {
-        mongoDBInterface.createData(fromStockToDocument(stock));
+        MongoDBInterface.getInstance().selectCollection(collectionName).createData(fromStockToDocument(stock));
     }
 
     @Override
     public List<Stock> getCandidateStocks() {
         List<Stock> stockList = new ArrayList<>();
-        mongoDBInterface.readListOfData().forEach(doc -> {
+        MongoDBInterface.getInstance().selectCollection(collectionName).readListOfData().forEach(doc -> {
             stockList.add(fromDocumentToStock(doc));
         });
 
@@ -75,7 +77,7 @@ public class DBCandidateStocksFetcher implements ICandidateStocksFetcher {
     @Override
     public void UpdateStock(Stock stock) {
         Stock oldStock=getCandidateStocks().stream().filter(prevStock->prevStock.getSymbol().equals(stock.getSymbol())).findFirst().get();
-        mongoDBInterface.updateData(symbol, fromStockToDocument(stock));
+        MongoDBInterface.getInstance().selectCollection(collectionName).updateData(symbol, fromStockToDocument(stock));
         updatesLog +="\n"+"old stock:"+oldStock+"\n"+"updated stock:"+stock+"\n";
 
     }

@@ -1,4 +1,4 @@
-package actions;
+package actions.testActions;
 
 import candidateStocks.AbstractJsonArrayIO;
 import entities.Stock;
@@ -13,6 +13,10 @@ public class TestDataHandlerJsonImp extends AbstractJsonArrayIO<TestData> implem
 
     public TestDataHandlerJsonImp(String path) {
         super(path);
+    }
+
+    public TestData getTestData(){
+        return jsonObjectList.get(0);
     }
 
     @Override
