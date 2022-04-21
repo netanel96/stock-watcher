@@ -1,7 +1,7 @@
 # stock-watcher
 watches for stock prices that goes around the same values and alerts when it happens often.
 
-Requirements in order to run:
+Requirements in order to run locally:
 1. jdk 1.8 installed.and Maven.
 2. python installed and added to Path.
 
